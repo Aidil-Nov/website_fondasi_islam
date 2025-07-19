@@ -1,244 +1,142 @@
 <!DOCTYPE html>
 <html lang="id">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fondasi Islam</title>
+    <meta name="description" content="Panduan sholat lengkap sesuai tuntunan Muhammadiyah">
+    <meta name="keywords" content="sholat, panduan sholat, muhammadiyah, bacaan sholat">
+    <title>Fondasi Islam - Panduan Sholat Muhammadiyah</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preload" href="https://unpkg.com/feather-icons" as="script">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   </head>
+
   <body>
+    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+      <i data-feather="menu"></i>
+    </button>
+
     <div class="sidebar">
       <div class="logo">
-        <img src="img/logo/Lambang Warna.png" alt="Logo Fondasi Islam" />
+        <img src="img/logo/Lambang_Warna.png" alt="Logo Fondasi Islam" width="64" height="64" loading="lazy" />
         <div class="content">
           <h1>Fondasi Islam</h1>
           <p>Sistem Informasi</p>
         </div>
       </div>
-      <nav class="nav-menu">
-        <a href="index.html" class="radius-small"
-          ><i data-feather="home"></i> Beranda</a
-        >
-        <a href="panduan.html" class="radius-small"
-          ><i data-feather="book-open"></i> Panduan Sholat</a
-        >
-        <!-- <a href="video.html"><i data-feather="video"></i> Video Gerakan</a>
-      <a href="audio.html"><i data-feather="headphones"></i> Audio Bacaan</a> -->
-        <a href="tentang.html" class="radius-small"
-          ><i data-feather="info"></i> Tentang</a
-        >
-        <a href="bantuan.html" class="radius-small"
-          ><i data-feather="help-circle"></i> Bantuan</a
-        >
+      <nav class="nav-menu" aria-label="Menu navigasi utama">
+        <a href="index.html" class="radius-small"><i data-feather="home" aria-hidden="true"></i> Beranda</a>
+        <a href="panduan.html" class="radius-small"><i data-feather="book-open" aria-hidden="true"></i> Panduan
+          Sholat</a>
+        <a href="tentang.html" class="radius-small"><i data-feather="info" aria-hidden="true"></i> Tentang</a>
       </nav>
     </div>
 
+    <div class="sidebar-overlay"></div>
+
     <main class="main-content">
       <h1>Panduan Sholat Muhammadiyah</h1>
-      <p>Marilah Sholat Wahai Kawan</p>
+      <p class="subtitle">Aqimush Sholah" - Tegakkanlah Sholat!</p>
 
-      <div class="carousel-container">
-        <button class="arrow-btn left">
-          <i data-feather="chevron-left"></i>
-        </button>
-        <div class="carousel">
-          <!-- Slide 1 - Panduan Sholat -->
-          <div class="slide">
-            <img
-              src="https://source.unsplash.com/random/800x500/?mosque"
-              alt="Masjid dengan kubah indah dan kaligrafi islami"
-              class="slide-img"
-            />
-            <div class="slide-content">
-              <h3 class="slide-title">Panduan Sholat Lengkap</h3>
-              <p class="slide-desc">
-                Pelajari tata cara sholat fardhu sesuai sunnah Rasulullah dengan
-                ilustrasi gerakan dan bacaan.
-              </p>
-              <a href="#" class="slide-link">Mulai Belajar</a>
+      <section aria-labelledby="bacaan-sholat">
+        <h2 id="bacaan-sholat">Bacaan Sholat</h2>
+        <p>Ini merupakan bacaan sholat yang dapat diakses pengguna berupa suara</p>
+
+        <div class="audio-player-list">
+          <div class="audio-item" data-audio="audio/doa-iftitah.mp3">
+            <button class="play-btn" aria-label="Putar Doa Iftitah"><i class="icon-play"
+                aria-hidden="true"></i></button>
+            <div class="audio-info">
+              <div class="audio-title">Doa Iftitah</div>
+              <div class="audio-subtitle">
+                <span>Pembukaan Sholat</span>
+                <span class="audio-duration">00:45</span>
+              </div>
+              <progress value="0" max="100" aria-label="Progress pemutaran"></progress>
             </div>
           </div>
 
-          <!-- Slide 2 - Bacaan Sholat -->
-          <div class="slide">
-            <img
-              src="https://source.unsplash.com/random/800x500/?quran"
-              alt="Al-Quran terbuka dengan hiasan islami"
-              class="slide-img"
-            />
-            <div class="slide-content">
-              <h3 class="slide-title">Bacaan Sholat</h3>
-              <p class="slide-desc">
-                Dengarkan dan hafalkan bacaan sholat dari doa iftitah hingga
-                salam dengan audio jelas.
-              </p>
-              <a href="#" class="slide-link">Dengarkan Sekarang</a>
+          <div class="audio-item" data-audio="audio/doa-rukuk.mp3">
+            <button class="play-btn" aria-label="Putar Doa Rukuk"><i class="icon-play" aria-hidden="true"></i></button>
+            <div class="audio-info">
+              <div class="audio-title">Doa Rukuk</div>
+              <div class="audio-subtitle">
+                <span>Subhana rabbiyal 'azhim</span>
+                <span class="audio-duration">00:15</span>
+              </div>
+              <progress value="0" max="100" aria-label="Progress pemutaran"></progress>
             </div>
           </div>
 
-          <!-- Slide 3 - Doa Setelah Sholat -->
-          <div class="slide">
-            <img
-              src="https://source.unsplash.com/random/800x500/?prayer"
-              alt="Tangan berdoa dengan latar cahaya lembut"
-              class="slide-img"
-            />
-            <div class="slide-content">
-              <h3 class="slide-title">Doa Setelah Sholat</h3>
-              <p class="slide-desc">
-                Kumpulan doa mustajab setelah sholat fardhu beserta terjemahan
-                dan keutamaannya.
-              </p>
-              <a href="#" class="slide-link">Lihat Doa</a>
+          <div class="audio-item" data-audio="audio/doa-itidal.mp3">
+            <button class="play-btn" aria-label="Putar Doa I'tidal"><i class="icon-play"
+                aria-hidden="true"></i></button>
+            <div class="audio-info">
+              <div class="audio-title">Doa I'tidal</div>
+              <div class="audio-subtitle">
+                <span>Sami'allahu liman hamidah</span>
+                <span class="audio-duration">00:20</span>
+              </div>
+              <progress value="0" max="100" aria-label="Progress pemutaran"></progress>
             </div>
           </div>
 
-          <!-- Slide 4 - Dzikir Harian -->
-          <div class="slide">
-            <img
-              src="https://source.unsplash.com/random/800x500/?islamic"
-              alt="Tasbih kayu di atas sajadah"
-              class="slide-img"
-            />
-            <div class="slide-content">
-              <h3 class="slide-title">Dzikir Harian</h3>
-              <p class="slide-desc">
-                Amalan dzikir pagi dan petang untuk perlindungan dan ketenangan
-                hati.
-              </p>
-              <a href="#" class="slide-link">Baca Dzikir</a>
+          <div class="audio-item" data-audio="audio/doa-sujud.mp3">
+            <button class="play-btn" aria-label="Putar Doa Sujud"><i class="icon-play" aria-hidden="true"></i></button>
+            <div class="audio-info">
+              <div class="audio-title">Doa Sujud</div>
+              <div class="audio-subtitle">
+                <span>Subhana rabbiyal a'la</span>
+                <span class="audio-duration">00:15</span>
+              </div>
+              <progress value="0" max="100" aria-label="Progress pemutaran"></progress>
             </div>
           </div>
 
-          <!-- Slide 5 - Kajian Muhammadiyah -->
-          <div class="slide">
-            <img
-              src="https://source.unsplash.com/random/800x500/?lecture"
-              alt="Pengajian di masjid dengan jamaah"
-              class="slide-img"
-            />
-            <div class="slide-content">
-              <h3 class="slide-title">Kajian Muhammadiyah</h3>
-              <p class="slide-desc">
-                Video kajian ulama Muhammadiyah tentang fiqh sholat dan
-                kehidupan islami.
-              </p>
-              <a href="#" class="slide-link">Tonton Kajian</a>
+          <div class="audio-item" data-audio="audio/tahiyat-akhir.mp3">
+            <button class="play-btn" aria-label="Putar Tahiyat Akhir"><i class="icon-play"
+                aria-hidden="true"></i></button>
+            <div class="audio-info">
+              <div class="audio-title">Tahiyat Akhir</div>
+              <div class="audio-subtitle">
+                <span>Attahiyatul mubarakat</span>
+                <span class="audio-duration">01:10</span>
+              </div>
+              <progress value="0" max="100" aria-label="Progress pemutaran"></progress>
             </div>
           </div>
         </div>
-        <button class="arrow-btn right">
-          <i data-feather="chevron-right"></i>
-        </button>
-      </div>
+      </section>
 
-      <h1>Bacaan Sholat</h1>
-      <p>
-        Ini merupakan bacaan sholat yang dapat diakses pengguna berupa suara
-      </p>
-      <!-- Prayer List Section -->
-      <div class="audio-player-list">
-        <!-- Doa Iftitah -->
-        <div class="audio-item" data-audio="audio/doa-iftitah.mp3">
-          <button class="play-btn"><i class="icon-play"></i></button>
-          <div class="audio-info">
-            <div class="audio-title">Doa Iftitah</div>
-            <div class="audio-subtitle">
-              <span>Pembukaan Sholat</span>
-              <span class="audio-duration">00:45</span>
-            </div>
-            <progress value="0" max="100"></progress>
-          </div>
-        </div>
-
-        <!-- Doa Rukuk -->
-        <div class="audio-item" data-audio="audio/doa-rukuk.mp3">
-          <button class="play-btn"><i class="icon-play"></i></button>
-          <div class="audio-info">
-            <div class="audio-title">Doa Rukuk</div>
-            <div class="audio-subtitle">
-              <span>Subhana rabbiyal 'azhim</span>
-              <span class="audio-duration">00:15</span>
-            </div>
-            <progress value="0" max="100"></progress>
-          </div>
-        </div>
-
-        <!-- Doa I'tidal -->
-        <div class="audio-item" data-audio="audio/doa-itidal.mp3">
-          <button class="play-btn"><i class="icon-play"></i></button>
-          <div class="audio-info">
-            <div class="audio-title">Doa I'tidal</div>
-            <div class="audio-subtitle">
-              <span>Sami'allahu liman hamidah</span>
-              <span class="audio-duration">00:20</span>
-            </div>
-            <progress value="0" max="100"></progress>
-          </div>
-        </div>
-
-        <!-- Doa Sujud -->
-        <div class="audio-item" data-audio="audio/doa-sujud.mp3">
-          <button class="play-btn"><i class="icon-play"></i></button>
-          <div class="audio-info">
-            <div class="audio-title">Doa Sujud</div>
-            <div class="audio-subtitle">
-              <span>Subhana rabbiyal a'la</span>
-              <span class="audio-duration">00:15</span>
-            </div>
-            <progress value="0" max="100"></progress>
-          </div>
-        </div>
-
-        <!-- Tahiyat Akhir -->
-        <div class="audio-item" data-audio="audio/tahiyat-akhir.mp3">
-          <button class="play-btn"><i class="icon-play"></i></button>
-          <div class="audio-info">
-            <div class="audio-title">Tahiyat Akhir</div>
-            <div class="audio-subtitle">
-              <span>Attahiyatul mubarakat</span>
-              <span class="audio-duration">01:10</span>
-            </div>
-            <progress value="0" max="100"></progress>
-          </div>
-        </div>
-      </div>
-      <section class="kajian" id="kajian">
+      <section class="kajian" id="kajian" aria-labelledby="kajian-title">
         <div class="kajian-header">
-          <h1>Kajian Muhammadiyah</h1>
+          <h2 id="kajian-title">Kajian Muhammadiyah</h2>
           <p>Kumpulan video kajian Islam sesuai manhaj Muhammadiyah</p>
         </div>
 
         <div class="video-grid">
-          <!-- Video 1 -->
           <div class="video-card">
             <div class="video-wrapper">
-              <iframe
-                src="https://www.youtube.com/embed/R3eI8PBqO1g"
-                title="Kajian Muhammadiyah 1"
-                allowfullscreen
-              >
-              </iframe>
+              <iframe src="https://www.youtube.com/embed/R3eI8PBqO1g"
+                title="Pengajian Umum Pimpinan Pusat Muhammadiyah: Optimis Hadapi Krisis"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
             <div class="video-info">
-              <h3>
-                PENGAJIAN UMUM PIMPINAN PUSAT MUHAMMADIYAH | OPTIMIS HADAPI
-                KRISIS
-              </h3>
+              <h3>PENGAJIAN UMUM PIMPINAN PUSAT MUHAMMADIYAH | OPTIMIS HADAPI KRISIS</h3>
               <p>Muhammadiyah Channel</p>
             </div>
           </div>
 
-          <!-- Video 2 -->
           <div class="video-card">
             <div class="video-wrapper">
-              <iframe
-                src="https://www.youtube.com/embed/cIr7w8hUZxI?si=yxjK4r3ul25Qpr0o"
-                title="Kajian Muhammadiyah 2"
-                allowfullscreen
-              >
-              </iframe>
+              <iframe src="https://www.youtube.com/embed/cIr7w8hUZxI"
+                title="Tata Cara dan Bacaan Sholat (Tuntunan Muhammadiyah)"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
             <div class="video-info">
               <h3>Tata Cara dan Bacaan Sholat (Tuntunan Muhammadiyah)</h3>
@@ -246,15 +144,12 @@
             </div>
           </div>
 
-          <!-- Video 3 -->
           <div class="video-card">
             <div class="video-wrapper">
-              <iframe
-                src="https://www.youtube.com/embed/Us_ozJED4Yo?si=2Y5fBBl55iMFNEE0"
-                title="Kajian Muhammadiyah 3"
-                allowfullscreen
-              >
-              </iframe>
+              <iframe src="https://www.youtube.com/embed/Us_ozJED4Yo"
+                title="Bacaan Sholat sesuai tuntunan Tarjih Muhammadiyah"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
             <div class="video-info">
               <h3>Bacaan Sholat sesuai tuntunan Tarjih Muhammadiyah</h3>
@@ -267,7 +162,6 @@
 
     <footer class="islamic-footer">
       <div class="footer-container">
-        <!-- Bagian 1: Informasi Website -->
         <div class="footer-section">
           <h3 class="footer-title">Panduan Sholat Muhammadiyah</h3>
           <p class="footer-desc">
@@ -275,57 +169,46 @@
             Muhammadiyah.
           </p>
           <div class="footer-social">
-            <a href="#" aria-label="Facebook"
-              ><i data-feather="facebook"></i
-            ></a>
-            <a href="#" aria-label="YouTube"><i data-feather="youtube"></i></a>
-            <a href="#" aria-label="Instagram"
-              ><i data-feather="instagram"></i
-            ></a>
+            <a href="#" aria-label="Facebook"><i data-feather="facebook" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i data-feather="youtube" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i data-feather="instagram" aria-hidden="true"></i></a>
           </div>
         </div>
 
-        <!-- Bagian 2: Navigasi Cepat -->
         <div class="footer-section">
           <h3 class="footer-title">Navigasi</h3>
           <ul class="footer-links">
             <li><a href="index.html">Beranda</a></li>
             <li><a href="panduan.html">Panduan Sholat</a></li>
             <li><a href="bacaan.html">Bacaan Sholat</a></li>
-            <li><a href="doa.html">Doa Harian</a></li>
             <li><a href="tentang.html">Tentang Kami</a></li>
           </ul>
         </div>
 
-        <!-- Bagian 3: Kontak & Referensi -->
         <div class="footer-section">
           <h3 class="footer-title">Kontak</h3>
           <ul class="footer-contact">
-            <li><i data-feather="mail"></i> info@panduansholat.id</li>
-            <li><i data-feather="phone"></i> +62 123 4567 890</li>
-            <li><i data-feather="map-pin"></i> Surakarta, Jawa Tengah</li>
+            <li><i data-feather="mail" aria-hidden="true"></i> info@panduansholat.id</li>
+            <li><i data-feather="phone" aria-hidden="true"></i> +62 123 4567 890</li>
+            <li><i data-feather="map-pin" aria-hidden="true"></i> Surakarta, Jawa Tengah</li>
           </ul>
           <div class="footer-reference">
             <p>
               Referensi:
-              <a href="https://muhamadiyah.or.id" target="_blank"
-                >Muhammadiyah</a
-              >, Al-Quran Digital
+              <a href="https://muhamadiyah.or.id" target="_blank" rel="noopener noreferrer">Muhammadiyah</a>, Al-Quran
+              Digital
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Copyright -->
       <div class="footer-copyright">
-        <p>&copy; 2023 Panduan Sholat Muhammadiyah. Seluruh hak dilindungi.</p>
+        <p>&copy; <span id="current-year"></span> Panduan Sholat Muhammadiyah. Seluruh hak dilindungi.</p>
       </div>
     </footer>
 
-    <script src="js/carousel.js"></script>
-
-    <script>
-      feather.replace();
-    </script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="js/script.js"></script>
   </body>
+
 </html>
