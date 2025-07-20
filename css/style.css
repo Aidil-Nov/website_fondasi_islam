@@ -23,20 +23,16 @@ body {
   background-color: var(--background-light);
 }
 
-/* Mobile Menu Toggle */
-.mobile-menu-toggle {
-  display: none;
+/* Overlay di luar sidebar */
+.sidebar-overlay {
+  display: none; /* Mulai dalam keadaan tersembunyi */
   position: fixed;
-  top: 15px;
-  left: 15px;
-  z-index: 1100;
-  background: var(--biru-normal);
-  color: var(--white);
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Latar belakang transparan gelap */
+  z-index: 900;
 }
 
 /* Sidebar */
@@ -46,6 +42,8 @@ body {
   color: var(--white);
   height: 100vh;
   position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -53,7 +51,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.logo {
+.sidebar .logo {
   text-align: left;
   display: flex;
   gap: 12px;
@@ -61,30 +59,7 @@ body {
   color: var(--biru-light);
 }
 
-.logo img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-}
-
-.logo h1 {
-  font-size: 18px;
-  margin: 0;
-  font-weight: 600;
-}
-
-.logo p {
-  font-size: 12px;
-  margin: 0;
-  opacity: 0.8;
-}
-
-.nav-menu {
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-menu a {
+.sidebar nav a {
   color: var(--white);
   text-decoration: none;
   padding: 12px;
@@ -92,28 +67,49 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: all 0.3s;
   border-radius: 8px;
+  transition: all 0.3s;
 }
 
-.nav-menu a:hover {
+.sidebar nav a:hover {
   background-color: var(--biru-dark);
 }
 
-.nav-menu a.active {
-  background-color: var(--emas-normal);
-  color: var(--text-primary);
+/* Top Bar for Mobile */
+.top-bar {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--biru-normal);
+  color: var(--white);
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
 
-.nav-menu a i {
-  width: 20px;
-  height: 20px;
-  stroke-width: 2;
+.top-bar .logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.menu {
+  display: block;
 }
 
 /* Main Content */
 .main-content {
-  margin-left: 1500px;
+  margin-left: 250px;
   padding: 30px;
   min-height: 100vh;
   transition: margin-left 0.3s ease;
@@ -123,8 +119,6 @@ body {
   color: var(--emas-normal);
   margin-bottom: 10px;
   font-size: 2rem;
-  position: relative;
-  padding-bottom: 10px;
 }
 
 .main-content h1::after {
@@ -400,17 +394,6 @@ body {
   opacity: 0.8;
 }
 
-.sidebar-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 900;
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
   .sidebar {
@@ -446,6 +429,7 @@ body {
 
   .main-content {
     padding: 20px;
+    padding-top: 100px;
   }
 
   .step-content {
@@ -454,6 +438,10 @@ body {
 
   .arabic-text {
     font-size: 1.5rem;
+  }
+
+  .top-bar {
+    display: flex;
   }
 }
 
@@ -469,79 +457,4 @@ body {
   .islamic-footer {
     margin-left: 250px;
   }
-}
-
-
-/* === STYLE GRID KAJIAN === */
-.kajian {
-  padding: 40px 20px;
-  background-color: #f8f9fa;
-  font-family: "Poppins", sans-serif;
-}
-
-.kajian-header {
-  margin-bottom: 40px;
-}
-
-.kajian-header h1 {
-  color: var(--emas-normal);
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
-
-.kajian-header p {
-  color: #666;
-  font-size: 1.1rem;
-}
-
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
-.video-card {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.video-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
-  height: 0;
-  overflow: hidden;
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-.video-info {
-  padding: 20px;
-}
-
-.video-info h3 {
-  color: #2d9596;
-  margin-bottom: 8px;
-  font-size: 1.2rem;
-}
-
-.video-info p {
-  color: #666;
-  font-size: 0.9rem;
 }
