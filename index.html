@@ -1,323 +1,410 @@
 <!DOCTYPE html>
 <html lang="id">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fondasi Islam - Panduan Sholat Muhammadiyah</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/feather-icons"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondasi Islam - Panduan Sholat Muhammadiyah</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Amiri:wght@400;700&display=swap"
+      rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
 
-<body>
+  <body>
 
-  <!-- Sidebar -->
-  <div class="sidebar" id="sidebar">
-    <div class="logo">
-      <img src="img/logo/Lambang Warna.png" alt="Logo Fondasi Islam" width="64" height="64" loading="lazy">
-      <div class="content">
-        <h1>Fondasi Islam</h1>
-        <p>Sistem Informasi</p>
-      </div>
-    </div>
-    <nav class="nav-menu" aria-label="Menu navigasi utama">
-      <a href="#beranda" class="radius-small"><i data-feather="home" aria-hidden="true"></i> Beranda</a>
-      <a href="#panduan" class="radius-small active"><i data-feather="book-open" aria-hidden="true"></i> Panduan Sholat</a>
-      <a href="tentang.html" class="radius-small"><i data-feather="info" aria-hidden="true"></i> Tentang</a>
-    </nav>
-  </div>
-
-  <!-- Sidebar Overlay -->
-  <div class="sidebar-overlay" id="sidebar-overlay"></div>
-
-  <!-- Top Bar for Mobile -->
-  <div class="top-bar" id="top-bar">
-    <div class="logo">
-      <img src="img/logo/Lambang Warna.png" alt="Logo" width="40" height="40">
-    </div>
-    <button class="menu-btn" id="menu-btn">
-      <i data-feather="menu"></i>
-    </button>
-  </div>
-
-  <main class="main-content">
-    <h1>Panduan Sholat Muhammadiyah</h1>
-    <p class="subtitle">Tuntunan Praktis Sholat Sesuai Sunnah Rasulullah</p>
-
-    <section class="prayer-guide" id="bacaan-sholat">
-      <h2>Bacaan Sholat Lengkap</h2>
-      <p class="section-description">Panduan lengkap dari takbir hingga salam dengan teks Arab, terjemahan, dan audio</p>
-
-      <div class="prayer-steps">
-        <!-- Takbiratul Ihram -->
-        <div class="prayer-step">
-          <div class="step-header">
-            <div class="step-number">1</div>
-            <h3 class="step-title">Takbiratul Ihram</h3>
-          </div>
-          <div class="step-content">
-            <div class="step-visual">
-              <img src="img/Takbir.png" alt="Posisi Takbiratul Ihram" loading="lazy">
-              <div class="image-caption">Mengangkat tangan sejajar bahu</div>
-            </div>
-            <div class="step-text">
-              <div class="arabic-text">
-                <p>اللهُ أَكْبَرُ</p>
-                <p class="translation">"Allah Maha Besar"</p>
-              </div>
-              <div class="audio-player">
-                <audio controls src="audio/takbir.mp3" class="audio"></audio>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bersedekap -->
-        <div class="prayer-step">
-          <div class="step-header">
-            <div class="step-number">2</div>
-            <h3 class="step-title">iftitah</h3>
-          </div>
-          <div class="step-content">
-            <div class="step-visual">
-              <img src="img/Bersekap.png" alt="Posisi Takbiratul Ihram" loading="lazy">
-              <div class="image-caption">Mengangkat tangan sejajar bahu</div>
-            </div>
-            <div class="step-text">
-              <div class="arabic-text">
-                <p>اللَّهُمَّ بَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ ، كَمَا بَاعَدْتَ بَيْنَ المَشْرِقِ وَالمَغْرِبِ ، اللَّهُمَّ نَقِّنِي مِنَ الخَطَايَا ، كَمَا يُنَقَّى الثَّوْبُ الأَبْيَضُ مِنَ الدَّنَسِ ، اللَّهُمَّ اغْسِلْ خَطَايَايَ بِالْمَاءِ ، وَالثَّلْجِ ، وَالبَرَدِ</p>
-                <p class="translation">" Wahai Allah jauhkanlah antara aku dan kesalahan-kesalahanku sebagaimana engkau jauhkan antara timur dan barat, ya Allah bersihkanlah aku dari kesalahan sebagaimana bersihnya baju putih dari kotoran, ya Allah basuhlah kesalahan-kesalahanku dengan air, salju dan air dingin."</p>
-              </div>
-              <div class="audio-player">
-                <audio controls src="audio/iftitaf.mp3" class="audio"></audio>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Rukuk -->
-        <div class="prayer-step">
-          <div class="step-header">
-            <div class="step-number">3</div>
-            <h3 class="step-title">Rukuk</h3>
-          </div>
-          <div class="step-content">
-            <div class="step-visual">
-              <img src="img/rukuk.png" alt="Posisi Takbiratul Ihram" loading="lazy">
-              <div class="image-caption">Mengangkat tangan sejajar bahu</div>
-            </div>
-            <div class="step-text">
-              <div class="arabic-text">
-                <p>سُبْحَانَكَ اللّهم رَبَّنَا وَبِحَمْدِكَ اللّهم اغْفِرْلِيْ</p>
-                <p class="translation">"Maha Suci Engkau, ya Allah. Dan dengan memuji Engkau, ya Allah, aku memohon ampun."</p>
-              </div>
-              <div class="audio-player">
-                <audio controls src="audio/rukuk.mp3" class="audio"></audio>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Itidal dan Tuma'ninah -->
-        <div class="prayer-step">
-          <div class="step-header">
-            <div class="step-number">4</div>
-            <h3 class="step-title">Itidal dan Tuma'ninah</h3>
-          </div>
-          <div class="step-content">
-            <div class="step-visual">
-              <img src="img/diam.png" alt="Posisi Takbiratul Ihram" loading="lazy">
-              <div class="image-caption">Mengangkat tangan sejajar bahu</div>
-            </div>
-            <div class="step-text">
-              <div class="arabic-text">
-                <p>رَبَّنَا وَلَكَ الْحَمْدُ</p>
-                <p class="translation">“Ya Tuhanku, segala puji itu bagi engkau”</p>
-              </div>
-              <div class="audio-player">
-                <audio controls src="audio/bacaan mau sujud.mp3" class="audio"></audio>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sujud -->
-        <div class="prayer-step">
-          <div class="step-header">
-            <div class="step-number">5</div>
-            <h3 class="step-title">Sujud</h3>
-          </div>
-          <div class="step-content">
-            <div class="step-visual">
-              <img src="img/sujud.png" alt="Posisi Takbiratul Ihram" loading="lazy">
-              <div class="image-caption">Mengangkat tangan sejajar bahu</div>
-            </div>
-            <div class="step-text">
-              <div class="arabic-text">
-                <p>سُبْحَانَكَ اللهُمَّ رَبَّنَا وَبِحَمْدِكَ اللهُمَّ اغْفِرْلِيْ</p>
-                <p class="translation">“ Maha suci Engkau, Ya Allah, dan dengan memuji kepada Engkau, Ya Allah, aku memohon ampun”</p>
-              </div>
-              <div class="audio-player">
-                <audio controls src="audio/bacaansujud.mp3" class="audio"></audio>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Duduk Antara 2 Sujud -->
-        <div class="prayer-step">
-          <div class="step-header">
-            <div class="step-number">6</div>
-            <h3 class="step-title">Duduk Antara 2 Sujud</h3>
-          </div>
-          <div class="step-content">
-            <div class="step-visual">
-              <img src="img/duduk antara.png" alt="Posisi Takbiratul Ihram" loading="lazy">
-              <div class="image-caption">Mengangkat tangan sejajar bahu</div>
-            </div>
-            <div class="step-text">
-              <div class="arabic-text">
-                <p>اَللّهُمَ اغْفِرْلِيْ وارْحَمنِيْ وَاجْبُرْنِيْ وَاهْدِنِيْ وَارْزُقْنِيْ</p>
-                <p class="translation">“ Ya Allah, ampunilah aku, belas kasihanilah aku, cukupilah aku, tunjukilah aku dan berikanlah rezeki kepadaku”</p>
-              </div>
-              <div class="audio-player">
-                <audio controls src="Audio/dudukdiantarasujud.mp3" class="audio"></audio>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tasyahud Awal -->
-        <div class="prayer-step">
-          <div class="step-header">
-            <div class="step-number">7</div>
-            <h3 class="step-title">Tasyahud Awal</h3>
-          </div>
-          <div class="step-content">
-            <div class="step-visual">
-              <img src="img/syahadat duduk.png" alt="Posisi Takbiratul Ihram" loading="lazy">
-              <div class="image-caption">Mengangkat tangan sejajar bahu</div>
-            </div>
-            <div class="step-text">
-              <div class="arabic-text">
-                <p>اَلتَّحِيَّاتُ لِلّهِ وَالصَّلَوَاتُ وَالطَّيِّباَتُ. اَلسَّلاَمُ عَلَيْكَ أَيُّهاَ النَّبِيُّوَرَحْمَةُ اللهِ وَبَرَكاَتُهُ. اَلسَّلاَمُ عَلَيْناَ وَعَلَى عِباَدِاللهِ الصَّالِحِيْنَأَشْهَدُ اَنْ لاَاِلَهَ اِلاَّ اللهِ
-وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُوْلُهُ</p>
-                <p class="translation">Segala kehormatan, kebahagiaan dan kebagusan adalah kepunyaan Allah. Semoga keselamatan bagi Engkau, ya Nabi Muhammad, beserta rahmat dan kebahagiaan Allah. Mudah-mudahan keselamatan juga bagi kita sekalian dan hamba-hamba Allah yang baik-baik. Aku bersaksi bahwa tiada Tuhan melainkan Allah dan aku bersaksi bahwa Muhammad itu hamba Allah dan utusan-Nya.</p>
-              </div>
-              <div class="audio-player">
-                <audio controls src="audio/tahyatakhir.mp3" class="audio"></audio>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tasyahud Akhir -->
-        <div class="prayer-step">
-          <div class="step-header">
-            <div class="step-number">8</div>
-            <h3 class="step-title">Tasyahud Akhir</h3>
-          </div>
-          <div class="step-content">
-            <div class="step-visual">
-              <img src="img/syahadat duduk.png" alt="Posisi Takbiratul Ihram" loading="lazy">
-              <div class="image-caption">Mengangkat tangan sejajar bahu</div>
-            </div>
-            <div class="step-text">
-              <div class="arabic-text">
-                <p>اَلتَّحِيَّاتُ لِلّهِ وَالصَّلَوَاتُ وَالطَّيِّباَتُ. اَلسَّلاَمُ عَلَيْكَ أَيُّهاَ النَّبِيُّوَرَحْمَةُ اللهِ وَبَرَكاَتُهُ. اَلسَّلاَمُ عَلَيْناَ وَعَلَى عِباَدِاللهِ الصَّالِحِيْنَأَشْهَدُ اَنْ لاَاِلَهَ اِلاَّ اللهِ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُوْلُهُ
-
-</p>
-                <p class="translation">“Segala kehormatan, kebahagiaan dan kebagusan adalah kepunyaan Allah, Semoga keselamatan bagi Engkau, ya Nabi Muhammad, beserta rahmat dan kebahagiaan Allah. Mudah-mudahan keselamatan juga bagi kita sekalian dan hamba-hamba Allah yang baik-baik. Aku bersaksi bahwa tiada Tuhan melainkan Allah dan aku bersaksi bahwa Muhammad itu hamba Allah dan utusan-Nyautusan-Nya,”</p>
-              </div>
-              <div class="audio-player">
-                <audio controls src="audio/tahyatakhir.mp3" class="audio"></audio>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Salam -->
-        <div class="prayer-step">
-          <div class="step-header">
-            <div class="step-number">9</div>
-            <h3 class="step-title">Salam</h3>
-          </div>
-          <div class="step-content">
-            <div class="step-visual">
-              <img src="img/salam.png" alt="Posisi Takbiratul Ihram" loading="lazy">
-              <div class="image-caption">Mengangkat tangan sejajar bahu</div>
-            </div>
-            <div class="step-text">
-              <div class="arabic-text">
-                <p>Ke kanan: 
-                السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِوَبَرَكَاتُهُ
-                Ke kiri: السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ
-                </p>
-                <p class="translation">"Artinya: "Semoga Allah melimpahkan keselamatan, rahmat dan keberkahan untukmu dan semoga diberikan keselamatan dan rahmat Allah dan keberkahan berlimpah padamu atau kalian."</p>
-              </div>
-              <div class="audio-player">
-                <audio controls src="audio/salam.mp3" class="audio"></audio>
-              </div>
-            </div>
-          </div>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <div class="logo">
+        <img src="img/logo/Lambang Warna.png" alt="Logo Fondasi Islam" width="64" height="64" loading="lazy">
+        <div class="content">
+          <h2>Fondasi Islam</h2>
+          <p>Sistem Informasi</p>
         </div>
       </div>
-    </section>
-  </main>
+      <nav class="nav-menu" aria-label="Menu navigasi utama">
+        <a href="#beranda" class="radius-small"><i data-feather="home" aria-hidden="true"></i> Beranda</a>
+        <a href="#bacaan-sholat" class="radius-small active"><i data-feather="book-open" aria-hidden="true"></i> Panduan
+          Sholat</a>
+        <a href="tentang.html" class="radius-small"><i data-feather="info" aria-hidden="true"></i> Tentang</a>
+      </nav>
+    </div>
 
-  <footer class="islamic-footer">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3 class="footer-title">Panduan Sholat Muhammadiyah</h3>
-        <p class="footer-desc">
-          Sumber referensi sholat sesuai tuntunan Rasulullah ﷺ dan panduan Muhammadiyah.
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Top Bar for Mobile -->
+    <div class="top-bar" id="top-bar">
+      <div class="logo">
+        <img src="img/logo/Lambang Warna.png" alt="Logo" width="40" height="40">
+      </div>
+      <button class="menu-btn" id="menu-btn">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+
+    <main class="main-content">
+      <!-- Header Baru -->
+      <header class="hero-header" id="beranda">
+        <div class="hero-content">
+          <img src="img/logo/Lambang Warna.png" alt="Logo" class="hero-logo" loading="lazy">
+          <h1 class="hero-title">Panduan Sholat Muhammadiyah</h1>
+          <p class="hero-subtitle">Tuntunan Praktis Sholat Sesuai Sunnah Rasulullah</p>
+          <a href="#bacaan-sholat" class="hero-cta">Mulai Belajar</a>
+        </div>
+        <div class="hero-scroll">
+          <i data-feather="chevron-down"></i>
+        </div>
+      </header>
+      <section class="prayer-guide" id="bacaan-sholat">
+        <h2>Bacaan Sholat Lengkap</h2>
+        <p class="section-description">Panduan lengkap dari takbir hingga salam dengan teks Arab, terjemahan, dan audio
         </p>
-        <div class="footer-social">
-          <a href="#" aria-label="Facebook"><i data-feather="facebook" aria-hidden="true"></i></a>
-          <a href="#" aria-label="YouTube"><i data-feather="youtube" aria-hidden="true"></i></a>
-          <a href="#" aria-label="Instagram"><i data-feather="instagram" aria-hidden="true"></i></a>
+
+        <div class="prayer-steps">
+          <!-- Takbiratul Ihram -->
+          <div class="prayer-step">
+            <div class="step-header">
+              <div class="step-number">1</div>
+              <h3 class="step-title">Takbiratul Ihram</h3>
+            </div>
+            <div class="step-content">
+              <div class="step-visual">
+                <img src="img/Takbir.png" alt="Posisi Takbiratul Ihram" loading="lazy">
+                <div class="image-caption">Mengangkat tangan sejajar bahu</div>
+              </div>
+              <div class="step-text">
+                <div class="arabic-text">
+                  <p>اللهُ أَكْبَرُ</p>
+                  <p class="translation">"Allah Maha Besar"</p>
+                </div>
+                <div class="audio-player">
+                  <audio controls src="audio/takbir.mp3" class="audio"></audio>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bersedekap -->
+          <div class="prayer-step">
+            <div class="step-header">
+              <div class="step-number">2</div>
+              <h3 class="step-title">iftitah</h3>
+            </div>
+            <div class="step-content">
+              <div class="step-visual">
+                <img src="img/Bersekap.png" alt="Posisi Takbiratul Ihram" loading="lazy">
+                <div class="image-caption">Mengangkat tangan sejajar bahu</div>
+              </div>
+              <div class="step-text">
+                <div class="arabic-text">
+                  <p>اللَّهُمَّ بَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ ، كَمَا بَاعَدْتَ بَيْنَ المَشْرِقِ وَالمَغْرِبِ ،
+                    اللَّهُمَّ نَقِّنِي مِنَ الخَطَايَا ، كَمَا يُنَقَّى الثَّوْبُ الأَبْيَضُ مِنَ الدَّنَسِ ،
+                    اللَّهُمَّ اغْسِلْ خَطَايَايَ بِالْمَاءِ ، وَالثَّلْجِ ، وَالبَرَدِ</p>
+                  <p class="translation">" Wahai Allah jauhkanlah antara aku dan kesalahan-kesalahanku sebagaimana
+                    engkau jauhkan antara timur dan barat, ya Allah bersihkanlah aku dari kesalahan sebagaimana
+                    bersihnya baju putih dari kotoran, ya Allah basuhlah kesalahan-kesalahanku dengan air, salju dan air
+                    dingin."</p>
+                </div>
+                <div class="audio-player">
+                  <audio controls src="audio/iftitaf.mp3" class="audio"></audio>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rukuk -->
+          <div class="prayer-step">
+            <div class="step-header">
+              <div class="step-number">3</div>
+              <h3 class="step-title">Rukuk</h3>
+            </div>
+            <div class="step-content">
+              <div class="step-visual">
+                <img src="img/rukuk.png" alt="Posisi Takbiratul Ihram" loading="lazy">
+                <div class="image-caption">Mengangkat tangan sejajar bahu</div>
+              </div>
+              <div class="step-text">
+                <div class="arabic-text">
+                  <p>سُبْحَانَكَ اللّهم رَبَّنَا وَبِحَمْدِكَ اللّهم اغْفِرْلِيْ</p>
+                  <p class="translation">"Maha Suci Engkau, ya Allah. Dan dengan memuji Engkau, ya Allah, aku memohon
+                    ampun."</p>
+                </div>
+                <div class="audio-player">
+                  <audio controls src="audio/rukuk.mp3" class="audio"></audio>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Itidal dan Tuma'ninah -->
+          <div class="prayer-step">
+            <div class="step-header">
+              <div class="step-number">4</div>
+              <h3 class="step-title">Itidal dan Tuma'ninah</h3>
+            </div>
+            <div class="step-content">
+              <div class="step-visual">
+                <img src="img/diam.png" alt="Posisi Takbiratul Ihram" loading="lazy">
+                <div class="image-caption">Mengangkat tangan sejajar bahu</div>
+              </div>
+              <div class="step-text">
+                <div class="arabic-text">
+                  <p>رَبَّنَا وَلَكَ الْحَمْدُ</p>
+                  <p class="translation">“Ya Tuhanku, segala puji itu bagi engkau”</p>
+                </div>
+                <div class="audio-player">
+                  <audio controls src="audio/bacaan mau sujud.mp3" class="audio"></audio>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sujud -->
+          <div class="prayer-step">
+            <div class="step-header">
+              <div class="step-number">5</div>
+              <h3 class="step-title">Sujud</h3>
+            </div>
+            <div class="step-content">
+              <div class="step-visual">
+                <img src="img/sujud.png" alt="Posisi Takbiratul Ihram" loading="lazy">
+                <div class="image-caption">Mengangkat tangan sejajar bahu</div>
+              </div>
+              <div class="step-text">
+                <div class="arabic-text">
+                  <p>سُبْحَانَكَ اللهُمَّ رَبَّنَا وَبِحَمْدِكَ اللهُمَّ اغْفِرْلِيْ</p>
+                  <p class="translation">“ Maha suci Engkau, Ya Allah, dan dengan memuji kepada Engkau, Ya Allah, aku
+                    memohon ampun”</p>
+                </div>
+                <div class="audio-player">
+                  <audio controls src="audio/bacaansujud.mp3" class="audio"></audio>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Duduk Antara 2 Sujud -->
+          <div class="prayer-step">
+            <div class="step-header">
+              <div class="step-number">6</div>
+              <h3 class="step-title">Duduk Antara 2 Sujud</h3>
+            </div>
+            <div class="step-content">
+              <div class="step-visual">
+                <img src="img/duduk antara.png" alt="Posisi Takbiratul Ihram" loading="lazy">
+                <div class="image-caption">Mengangkat tangan sejajar bahu</div>
+              </div>
+              <div class="step-text">
+                <div class="arabic-text">
+                  <p>اَللّهُمَ اغْفِرْلِيْ وارْحَمنِيْ وَاجْبُرْنِيْ وَاهْدِنِيْ وَارْزُقْنِيْ</p>
+                  <p class="translation">“ Ya Allah, ampunilah aku, belas kasihanilah aku, cukupilah aku, tunjukilah aku
+                    dan berikanlah rezeki kepadaku”</p>
+                </div>
+                <div class="audio-player">
+                  <audio controls src="Audio/dudukdiantarasujud.mp3" class="audio"></audio>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tasyahud Awal -->
+          <div class="prayer-step">
+            <div class="step-header">
+              <div class="step-number">7</div>
+              <h3 class="step-title">Tasyahud Awal</h3>
+            </div>
+            <div class="step-content">
+              <div class="step-visual">
+                <img src="img/syahadat duduk.png" alt="Posisi Takbiratul Ihram" loading="lazy">
+                <div class="image-caption">Mengangkat tangan sejajar bahu</div>
+              </div>
+              <div class="step-text">
+                <div class="arabic-text">
+                  <p>اَلتَّحِيَّاتُ لِلّهِ وَالصَّلَوَاتُ وَالطَّيِّباَتُ. اَلسَّلاَمُ عَلَيْكَ أَيُّهاَ
+                    النَّبِيُّوَرَحْمَةُ اللهِ وَبَرَكاَتُهُ. اَلسَّلاَمُ عَلَيْناَ وَعَلَى عِباَدِاللهِ
+                    الصَّالِحِيْنَأَشْهَدُ اَنْ لاَاِلَهَ اِلاَّ اللهِ
+                    وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُوْلُهُ</p>
+                  <p class="translation">Segala kehormatan, kebahagiaan dan kebagusan adalah kepunyaan Allah. Semoga
+                    keselamatan bagi Engkau, ya Nabi Muhammad, beserta rahmat dan kebahagiaan Allah. Mudah-mudahan
+                    keselamatan juga bagi kita sekalian dan hamba-hamba Allah yang baik-baik. Aku bersaksi bahwa tiada
+                    Tuhan melainkan Allah dan aku bersaksi bahwa Muhammad itu hamba Allah dan utusan-Nya.</p>
+                </div>
+                <div class="audio-player">
+                  <audio controls src="audio/tahyatakhir.mp3" class="audio"></audio>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tasyahud Akhir -->
+          <div class="prayer-step">
+            <div class="step-header">
+              <div class="step-number">8</div>
+              <h3 class="step-title">Tasyahud Akhir</h3>
+            </div>
+            <div class="step-content">
+              <div class="step-visual">
+                <img src="img/syahadat duduk.png" alt="Posisi Takbiratul Ihram" loading="lazy">
+                <div class="image-caption">Mengangkat tangan sejajar bahu</div>
+              </div>
+              <div class="step-text">
+                <div class="arabic-text">
+                  <p>اَلتَّحِيَّاتُ لِلّهِ وَالصَّلَوَاتُ وَالطَّيِّباَتُ. اَلسَّلاَمُ عَلَيْكَ أَيُّهاَ
+                    النَّبِيُّوَرَحْمَةُ اللهِ وَبَرَكاَتُهُ. اَلسَّلاَمُ عَلَيْناَ وَعَلَى عِباَدِاللهِ
+                    الصَّالِحِيْنَأَشْهَدُ اَنْ لاَاِلَهَ اِلاَّ اللهِ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُوْلُهُ
+
+                  </p>
+                  <p class="translation">“Segala kehormatan, kebahagiaan dan kebagusan adalah kepunyaan Allah, Semoga
+                    keselamatan bagi Engkau, ya Nabi Muhammad, beserta rahmat dan kebahagiaan Allah. Mudah-mudahan
+                    keselamatan juga bagi kita sekalian dan hamba-hamba Allah yang baik-baik. Aku bersaksi bahwa tiada
+                    Tuhan melainkan Allah dan aku bersaksi bahwa Muhammad itu hamba Allah dan utusan-Nyautusan-Nya,”</p>
+                </div>
+                <div class="audio-player">
+                  <audio controls src="audio/tahyatakhir.mp3" class="audio"></audio>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Salam -->
+          <div class="prayer-step">
+            <div class="step-header">
+              <div class="step-number">9</div>
+              <h3 class="step-title">Salam</h3>
+            </div>
+            <div class="step-content">
+              <div class="step-visual">
+                <img src="img/salam.png" alt="Posisi Takbiratul Ihram" loading="lazy">
+                <div class="image-caption">Mengangkat tangan sejajar bahu</div>
+              </div>
+              <div class="step-text">
+                <div class="arabic-text">
+                  <p>Ke kanan:
+                    السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِوَبَرَكَاتُهُ
+                    Ke kiri: السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ
+                  </p>
+                  <p class="translation">"Artinya: "Semoga Allah melimpahkan keselamatan, rahmat dan keberkahan untukmu
+                    dan semoga diberikan keselamatan dan rahmat Allah dan keberkahan berlimpah padamu atau kalian."</p>
+                </div>
+                <div class="audio-player">
+                  <audio controls src="audio/salam.mp3" class="audio"></audio>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="footer-section">
-        <h3 class="footer-title">Navigasi</h3>
-        <ul class="footer-links">
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="panduan.html">Panduan Sholat</a></li>
-          <li><a href="bacaan.html">Bacaan Sholat</a></li>
-          <li><a href="tentang.html">Tentang Kami</a></li>
-        </ul>
-      </div>
+      <!-- KAJIAN MUHAMMADIYAH -->
+      <section id="kajian">
+        <div class="kajian-header">
+          <h1>Kajian Muhammadiyah</h1>
+          <p>Kumpulan video kajian Islam sesuai manhaj Muhammadiyah</p>
+        </div>
 
-      <div class="footer-section">
-        <h3 class="footer-title">Kontak</h3>
-        <ul class="footer-contact">
-          <li><i data-feather="mail" aria-hidden="true"></i> info@panduansholat.id</li>
-          <li><i data-feather="phone" aria-hidden="true"></i> +62 123 4567 890</li>
-          <li><i data-feather="map-pin" aria-hidden="true"></i> Surakarta, Jawa Tengah</li>
-        </ul>
-        <div class="footer-reference">
-          <p>
-            Referensi:
-            <a href="https://muhamadiyah.or.id" target="_blank" rel="noopener noreferrer">Muhammadiyah</a>, Al-Quran Digital
+        <div class="video-grid">
+          <!-- Video 1 -->
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/R3eI8PBqO1g" title="Kajian Muhammadiyah 1" allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-info">
+              <h3>
+                PENGAJIAN UMUM PIMPINAN PUSAT MUHAMMADIYAH | OPTIMIS HADAPI
+                KRISIS
+              </h3>
+              <p>Muhammadiyah Channel</p>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/cIr7w8hUZxI?si=yxjK4r3ul25Qpr0o" title="Kajian Muhammadiyah 2"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-info">
+              <h3>Tata Cara dan Bacaan Sholat (Tuntunan Muhammadiyah)</h3>
+              <p>KMUHITV</p>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/Us_ozJED4Yo?si=2Y5fBBl55iMFNEE0" title="Kajian Muhammadiyah 3"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-info">
+              <h3>Bacaan Sholat sesuai tuntunan Tarjih Muhammadiyah</h3>
+              <p>SMP Muhammadiyah 2 Jakarta</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <!-- FOOTER -->
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <footer class="islamic-footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3 class="footer-title">Panduan Sholat Muhammadiyah</h3>
+          <p class="footer-desc">
+            Sumber referensi sholat sesuai tuntunan Rasulullah ﷺ dan panduan Muhammadiyah.
           </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i data-feather="facebook" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i data-feather="youtube" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i data-feather="instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">Navigasi</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="panduan.html">Panduan Sholat</a></li>
+            <li><a href="bacaan.html">Bacaan Sholat</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">Kontak</h3>
+          <ul class="footer-contact">
+            <li><i data-feather="mail" aria-hidden="true"></i> info@panduansholat.id</li>
+            <li><i data-feather="phone" aria-hidden="true"></i> +62 123 4567 890</li>
+            <li><i data-feather="map-pin" aria-hidden="true"></i> Surakarta, Jawa Tengah</li>
+          </ul>
+          <div class="footer-reference">
+            <p>
+              Referensi:
+              <a href="https://muhamadiyah.or.id" target="_blank" rel="noopener noreferrer">Muhammadiyah</a>, Al-Quran
+              Digital
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="footer-copyright">
-      <p>&copy; <span id="current-year"></span> Panduan Sholat Muhammadiyah. Seluruh hak dilindungi.</p>
-    </div>
-  </footer>
+      <div class="footer-copyright">
+        <p>&copy; <span id="current-year"></span> Panduan Sholat Muhammadiyah. Seluruh hak dilindungi.</p>
+      </div>
+    </footer>
 
-  <script src="js/main.js"></script>
-  <script>
-    // Call feather.replace() to replace all feather icons after page load
-    feather.replace();
-  </script>
-</body>
+    <script src="js/main.js"></script>
+    <script>
+      // Call feather.replace() to replace all feather icons after page load
+      feather.replace();
+    </script>
+  </body>
 
 </html>
